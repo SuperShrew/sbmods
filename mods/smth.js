@@ -6,6 +6,7 @@ elements.mint = {
 	tempHigh: 300,
 	stateHigh: "dust",
 	reactions: {
-		"water": { elem1: null, elem2: "foam" },
+		"water": { elem1: "foam", elem2: "water" },
+        "soda": { elem1: "explosion", elem2: "explosion" },
 	}
 }
