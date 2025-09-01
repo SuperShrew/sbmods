@@ -10,13 +10,28 @@ elements.mint = {
         "soda": { elem1: "explosion", elem2: "explosion" },
 	}
 }
-elements.weird = {
-	color: "ff00ff",
+
+elements.linerx = {
+	color: "#ff00ff",
 	behavior: behaviors.POWDER,
 	category: "misc",
 	state: "solid",
 	tick: function(pixel) {
-		pixel.y = pixel.y + 1
-		deletePixel(pixel.x, pixel.y+1)
+        tryMove(pixelMap[pixel.x][pixel.y],pixel.x,pixel.y-1)
 	}
+}
+
+elements.patternpowder = {
+	color: "#ffff00",
+	behavior: behaviors.POWDER,
+	category: "misc",
+	state: "solid",
+	tick: function(pixel) {
+        tryMove(pixelMap[pixel.x][pixel.y],pixel.x-2,pixel.y-1)
+        tryMove(pixelMap[pixel.x][pixel.y],pixel.x+2,pixel.y)
+	}
+}
+
+elements.conway = {
+    //tbc
 }
