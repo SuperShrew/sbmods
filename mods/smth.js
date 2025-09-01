@@ -1,6 +1,8 @@
-elements.smth = {
-	color: "#ff0000",
-	behavior: behaviors.WALL,
-	category: "land",
+elements.antiness = {
+	color: "#aaffaa",
+	behavior: behaviors.POWDER,
+	category: "misc",
 	state: "solid",
+	tempHigh: 300,
+	stateHigh: "sand",
 }
