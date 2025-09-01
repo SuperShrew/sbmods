@@ -35,3 +35,16 @@ elements.patternpowder = {
 elements.conway = {
     //tbc
 }
+
+elements.bore = {
+    color: "#aaaaaa",
+    behavior: [
+        ["XX", "XX", "XX"],
+        ["XX", "XX", "XX"],
+        ["XX", "XX", "XX"]
+    ]
+}
+
+elements.conway = {
+    //tbc
+}
